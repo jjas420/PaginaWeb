@@ -108,6 +108,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 25px;
+    margin-top:20px ;
 
 }
 .new-cars img{
@@ -130,3 +131,60 @@ ul{
     font-size: 20px;
     
 }
+
+/*bannner one*/
+
+.banner--one{
+    width: 100%;
+    height: 300px;
+    background-image: url("/img/3D-banner-background.jpg");
+}
+
+.banner--one .content{
+    width: 40%;
+    padding: 80px 0px 0 30px;
+    color: white;
+
+}
+
+
+/*banner two*/
+.banner--two{
+    width: 100%;
+    height: 300px;
+    background-image: url("/img/wason.jpg" );
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+    justify-content: space-between;
+
+}
+
+.banner--two .content{
+    width: 40%;
+    padding: 80px 0px 0 30px;
+    color: white;
+
+}
+.social{
+    margin: 50px;
+}
+.social p{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.LINKS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LINKS a{
+    margin: 0px 15px;
+}
+.LINKS i{
+    font-size: 3em;
+}
+
+
+
