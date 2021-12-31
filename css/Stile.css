@@ -63,18 +63,12 @@ ul{
 
 /*-------------------------------------------banner------------*/
 .show-case{
-    width: 100%;
-    height: 550px;
-    background-image:url('/img/wason.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center center/cover;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-
-    align-items: center;
-    justify-content: flex-end;
+   
+    
+    
+}
+.show-case img{
+    max-width: 100%;
 }
 .btn{
     cursor: pointer;
@@ -138,6 +132,7 @@ ul{
     width: 100%;
     height: 300px;
     background-image: url("/img/3D-banner-background.jpg");
+
 }
 
 .banner--one .content{
@@ -222,4 +217,41 @@ ul{
 
 .publicidad h3:hover{
     color: white;
+}
+@media (max-width:700px){
+    .nav-main  ,.nav-menu ul {
+    display:block;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+
+    }
+    .new-cars{
+        grid-template-columns:repeat(2,1fr) ;
+
+    }
+    .banner--one , .banner--two{
+        
+        height: 600px;
+
+    }
+    .banner--two .content, .banner--one .content{
+        width: 70%;
+        padding: 100px 0px 0 30px;
+        color: white;
+    
+    }
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
 }
