@@ -42,6 +42,7 @@ ul{
 }
 
 
+
 .nav-main ul{
     display: flex;
 }
@@ -63,18 +64,22 @@ ul{
 
 /*-------------------------------------------banner------------*/
 .show-case{
+   
     width: 100%;
     height: 550px;
-    background-image:url('/img/wason.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center center/cover;
-    padding-bottom: 50px;
+    background: url("/img/wason.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
-
     align-items: center;
+    text-align: center;
     justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+.show-case img{
+    max-width: 100%;
 }
 .btn{
     cursor: pointer;
@@ -138,6 +143,7 @@ ul{
     width: 100%;
     height: 300px;
     background-image: url("/img/3D-banner-background.jpg");
+
 }
 
 .banner--one .content{
@@ -152,8 +158,7 @@ ul{
 .banner--two{
     width: 100%;
     height: 300px;
-    background-image: url("/img/wason.jpg" );
-    background-repeat: no-repeat;
+    background: url("/img/wason1.jpg") no-repeat center center/cover;
     background-position: center center/cover;
     justify-content: space-between;
 
@@ -222,4 +227,68 @@ ul{
 
 .publicidad h3:hover{
     color: white;
+}
+
+@media (max-width:700px){
+    /*nav*/    
+    .nav-main ul.nav-menu{
+        margin-left: 0px;
+    }
+    .nav-main .nav-menu {
+        
+        margin-left: 0px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        width: 30%;
+    }
+
+    .nave-menu-right{
+        
+        padding-left:90% ;
+    }
+    /*cards*/
+    .new-cars{
+        grid-template-columns:repeat(2,1fr) ;
+
+    }
+    .btn-menu{
+        position:absolute;
+        cursor: pointer;
+        right: 30px;
+        top: 15px;
+        z-index: 2;
+        font-size: 40px;
+    }
+    /*banner*/
+    .banner--one , .banner--two{
+        
+        height: 600px;
+
+    }
+    .banner--two{
+        width: 100%;
+        height: 300px;
+        background: url("/img/wason2.jpg") no-repeat center center/cover;
+        justify-content: space-between;
+        }
+    
+    .banner--two .content, .banner--one .content{
+        width: 70%;
+        padding: 100px 0px 0 30px;
+        color: white;
+    
+    }
+    /*footer*/
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+   
 }
